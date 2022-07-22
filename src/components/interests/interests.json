@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_interests_interests",
+  "info": {
+    "displayName": "interests"
+  },
+  "options": {},
+  "attributes": {
+    "interests": {
+      "type": "text"
+    }
+  }
+}

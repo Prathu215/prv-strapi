@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_hobbies_hobbies",
+  "info": {
+    "displayName": "hobbies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hobby": {
+      "type": "text"
+    }
+  }
+}

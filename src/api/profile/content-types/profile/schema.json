@@ -1,0 +1,77 @@
+{
+  "kind": "singleType",
+  "collectionName": "profiles",
+  "info": {
+    "singularName": "profile",
+    "pluralName": "profiles",
+    "displayName": "profile",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "petname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "profilephoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "backgroundimage": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "dateofbirth": {
+      "type": "date"
+    },
+    "phonenumber": {
+      "type": "string"
+    },
+    "worknumber": {
+      "type": "string"
+    },
+    "profilebio": {
+      "type": "text"
+    },
+    "interests": {
+      "type": "component",
+      "repeatable": true,
+      "component": "interests.interests"
+    },
+    "hobbies": {
+      "type": "component",
+      "repeatable": true,
+      "component": "hobbies.hobbies"
+    },
+    "addressinfo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "address.address"
+    }
+  }
+}
