@@ -12,13 +12,10 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "firstname": {
+    "name": {
       "type": "string"
     },
-    "lastname": {
-      "type": "string"
-    },
-    "phonenumber": {
+    "phoneNumber": {
       "type": "string"
     },
     "email": {
