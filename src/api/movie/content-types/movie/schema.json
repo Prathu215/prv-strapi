@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "singularName": "movie",
+    "pluralName": "movies",
+    "displayName": "Movie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "poster_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "review_description": {
+      "type": "richtext"
+    },
+    "rating": {
+      "type": "enumeration",
+      "enum": [
+        "Blockbuster",
+        "Hit",
+        "Average",
+        "Below Average",
+        "Flop"
+      ]
+    },
+    "youtube_url": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Cover Songs",
+        "Web Series",
+        "Short Films",
+        "Movies"
+      ]
+    },
+    "release_date": {
+      "type": "date"
+    },
+    "enable_comments": {
+      "type": "boolean",
+      "default": false
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "movie"
+    }
+  }
+}
