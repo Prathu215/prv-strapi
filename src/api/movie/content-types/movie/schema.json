@@ -17,7 +17,7 @@
     },
     "poster_image": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -63,6 +63,20 @@
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "movie"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
