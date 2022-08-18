@@ -69,14 +69,21 @@
       "targetField": "title"
     },
     "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "star_rating": {
+      "type": "decimal"
+    },
+    "short_description": {
+      "type": "text"
     }
   }
 }
