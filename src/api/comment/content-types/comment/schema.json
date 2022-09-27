@@ -35,6 +35,12 @@
         "Rejected"
       ],
       "default": "Pending"
+    },
+    "food": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::food.food",
+      "inversedBy": "comments"
     }
   }
 }

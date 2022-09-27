@@ -31,6 +31,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "plugin::users-permissions.user"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Events",
+        "Blogs",
+        "Movie",
+        "Other"
+      ],
+      "default": "Events"
     }
   }
 }

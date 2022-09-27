@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "foods",
+  "info": {
+    "singularName": "food",
+    "pluralName": "foods",
+    "displayName": "food"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "restaurant_name": {
+      "type": "string"
+    },
+    "restaurant_description": {
+      "type": "text"
+    },
+    "restaurant_type": {
+      "type": "enumeration",
+      "enum": [
+        "Indian",
+        "Mexican",
+        "Thai",
+        "Italian",
+        "Mediterranean"
+      ]
+    },
+    "restaurant_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "restaurant_rating": {
+      "type": "decimal"
+    },
+    "comments": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comment.comment",
+      "mappedBy": "food"
+    }
+  }
+}
