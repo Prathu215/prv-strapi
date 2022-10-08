@@ -4,7 +4,8 @@
   "info": {
     "singularName": "food",
     "pluralName": "foods",
-    "displayName": "food"
+    "displayName": "food",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,14 +29,15 @@
       ]
     },
     "restaurant_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "restaurant_rating": {
       "type": "decimal"
@@ -45,6 +47,14 @@
       "relation": "oneToMany",
       "target": "api::comment.comment",
       "mappedBy": "food"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "restaurant_name"
+    },
+    "enable_comments": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
