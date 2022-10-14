@@ -41,6 +41,10 @@
         "Other"
       ],
       "default": "Events"
+    },
+    "isReaded": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
