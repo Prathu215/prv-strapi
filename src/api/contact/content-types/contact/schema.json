@@ -45,6 +45,10 @@
     "isReaded": {
       "type": "boolean",
       "default": false
+    },
+    "added_feedbackReview": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
