@@ -72,6 +72,16 @@
       "type": "component",
       "repeatable": false,
       "component": "address.address"
+    },
+    "slider": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
